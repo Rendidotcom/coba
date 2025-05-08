@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title translate="no">Cobaan</title>
+  <meta charset="utf-8" translate="no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Motivate every student to mastery with Cobaan — a fun and customizable learning experience for all." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://cf.cobaan.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://analytics.google.com" />
+  <link rel="dns-prefetch" href="https://analytics.google.com" />
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://fnl.cobaan.com" />
+  <link rel="dns-prefetch" href="https://fnl.cobaan.com" />
+  <link rel="preconnect" href="https://www.ref-r.com" />
+  <link rel="dns-prefetch" href="https://www.ref-r.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+  <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
+  <!-- Placeholder og image -->
+  <meta name="twitter:image" content="https://via.placeholder.com/1200x630?text=Cobaan" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Cobaan" />
+  <meta name="twitter:title" content="Cobaan — A new way to learn" />
+  <meta property="og:title" content="Cobaan — A new way to learn" />
+  <meta name="twitter:description"
+    content="Create gamified quizzes, lessons, and flashcards with Cobaan. A new learning experience for everyone." />
+  <meta property="og:description"
+    content="Create gamified quizzes, lessons, and flashcards with Cobaan. A new learning experience for everyone." />
+
+  <link rel="stylesheet" href="https://cf.cobaan.com/assets/styles/v3/fontawesome.all.css" />
+  <link rel="stylesheet" href="https://cf.cobaan.com/assets/v2/adminv3/scripts/index.css">
+
+  <!-- Preload Fonts -->
+  <link rel="preload" as="font" href="https://cf.cobaan.com/fonts/fa-solid-900.woff2" type="font/woff2" crossorigin="" />
+  <link rel="preload" as="font" href="https://cf.cobaan.com/fonts/fa-regular-400.woff2" type="font/woff2" crossorigin="" />
+  <link rel="preload" as="font" href="https://cf.cobaan.com/fonts/custom-icons.woff2" type="font/woff2" crossorigin="" />
+  <link rel="preload" as="font" href="https://cf.cobaan.com/fonts/fa-brands-400.woff2" type="font/woff2" crossorigin="" />
+
+</head>
+
+<body>
+  <div class="app-container cobaan-app-container" id="app">
+    <div class="nav-container"></div>
+    <main class="page-container" id="page-container" tabindex="0">
+      <div class="page-inner"></div>
+      <div id="initial-loader-container">
+        <div class="spinner kr-anim-spin"><img
+            src="https://via.placeholder.com/64x64?text=C" alt="Cobaan logo" /></div>
+      </div>
+    </main>
+  </div>
+
+  <style>
+    #initial-loader-container {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      z-index: 99999;
+      background-color: #ffffff;
+    }
+
+    #initial-loader-container .spinner {
+      font-size: 64px;
+      position: absolute;
+      width: 64px;
+      height: 64px;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      line-height: 0.9em;
+    }
+
+    .kr-anim-spin {
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+  <div id="__adminv3"> </div>
+  <script>
+    window.serverData = {
+      requestCountry: "ID",
+      region: "",
+      cdnPrefix: "https://cf.cobaan.com/assets/v2/adminv3/scripts/",
+      preConnectUrls: [
+        "https://analytics.google.com",
+        "https://www.googletagmanager.com",
+        "https://fnl.cobaan.com",
+        "https://www.ref-r.com",
+        "https://www.google-analytics.com"
+      ],
+      preloadFontFiles: [
+        "https://cf.cobaan.com/fonts/fa-solid-900.woff2",
+        "https://cf.cobaan.com/fonts/fa-regular-400.woff2",
+        "https://cf.cobaan.com/fonts/custom-icons.woff2",
+        "https://cf.cobaan.com/fonts/fa-brands-400.woff2"
+      ],
+      initialCssFiles: ["index.css"],
+      faCssFile: "https://cf.cobaan.com/assets/styles/v3/fontawesome.all.css",
+      preloadJsFiles: [
+        "shared-domains-vendor.js",
+        "dayjs.js",
+        "floating-vue-vendor.js",
+        "unhead-vue.js",
+        "pinia.js",
+        "i18next.js",
+        "vue-router.js",
+        "lodash.js",
+        "axios.js",
+        "qs.js",
+        "vuex.js",
+        "sentry-package.js",
+        "vue-gtag.js"
+      ],
+      initialJsFiles: ["entryPoint.js"],
+      stripePublishableKey: "pk_test_placeholder",
+      googleClientId: "your-google-client-id.apps.googleusercontent.com",
+      fullAPIPrefix: "https://cobaan.com/_api/main",
+      src: "renderserver",
+      experimentName: "main_main",
+      componentId: "adminv3/main",
+      deploymentLevel: "live"
+    };
+  </script>
+
+  <script src="https://cf.cobaan.com/assets/v2/adminv3/scripts/entryPoint.js" type="module"></script>
+</body>
+
+</html>
