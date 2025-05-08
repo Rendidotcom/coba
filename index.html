@@ -9,20 +9,20 @@
     content="Motivate every student to mastery with Cobaan — a fun and customizable learning experience for all." />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <link rel="preconnect" href="https://cf.cobaan.com" />
+  
+  <!-- Preconnects dan DNS Prefetch -->
+  <link rel="preconnect" href="https://coba-nine-rho.vercel.app" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://analytics.google.com" />
   <link rel="dns-prefetch" href="https://analytics.google.com" />
   <link rel="preconnect" href="https://www.googletagmanager.com" />
   <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-  <link rel="preconnect" href="https://fnl.cobaan.com" />
-  <link rel="dns-prefetch" href="https://fnl.cobaan.com" />
   <link rel="preconnect" href="https://www.ref-r.com" />
   <link rel="dns-prefetch" href="https://www.ref-r.com" />
   <link rel="preconnect" href="https://www.google-analytics.com" />
   <link rel="dns-prefetch" href="https://www.google-analytics.com" />
 
-  <!-- Placeholder og image -->
+  <!-- OG Image -->
   <meta name="twitter:image" content="https://via.placeholder.com/1200x630?text=Cobaan" />
   <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Cobaan" />
   <meta name="twitter:title" content="Cobaan — A new way to learn" />
@@ -32,15 +32,15 @@
   <meta property="og:description"
     content="Create gamified quizzes, lessons, and flashcards with Cobaan. A new learning experience for everyone." />
 
-  <link rel="stylesheet" href="https://cf.cobaan.com/assets/styles/v3/fontawesome.all.css" />
-  <link rel="stylesheet" href="https://cf.cobaan.com/assets/v2/adminv3/scripts/index.css">
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://coba-nine-rho.vercel.app/assets/styles/v3/fontawesome.all.css" />
+  <link rel="stylesheet" href="https://coba-nine-rho.vercel.app/assets/v2/adminv3/scripts/index.css" />
 
   <!-- Preload Fonts -->
-  <link rel="preload" as="font" href="https://cf.cobaan.com/fonts/fa-solid-900.woff2" type="font/woff2" crossorigin="" />
-  <link rel="preload" as="font" href="https://cf.cobaan.com/fonts/fa-regular-400.woff2" type="font/woff2" crossorigin="" />
-  <link rel="preload" as="font" href="https://cf.cobaan.com/fonts/custom-icons.woff2" type="font/woff2" crossorigin="" />
-  <link rel="preload" as="font" href="https://cf.cobaan.com/fonts/fa-brands-400.woff2" type="font/woff2" crossorigin="" />
-
+  <link rel="preload" as="font" href="https://coba-nine-rho.vercel.app/fonts/fa-solid-900.woff2" type="font/woff2" crossorigin />
+  <link rel="preload" as="font" href="https://coba-nine-rho.vercel.app/fonts/fa-regular-400.woff2" type="font/woff2" crossorigin />
+  <link rel="preload" as="font" href="https://coba-nine-rho.vercel.app/fonts/custom-icons.woff2" type="font/woff2" crossorigin />
+  <link rel="preload" as="font" href="https://coba-nine-rho.vercel.app/fonts/fa-brands-400.woff2" type="font/woff2" crossorigin />
 </head>
 
 <body>
@@ -49,8 +49,9 @@
     <main class="page-container" id="page-container" tabindex="0">
       <div class="page-inner"></div>
       <div id="initial-loader-container">
-        <div class="spinner kr-anim-spin"><img
-            src="https://via.placeholder.com/64x64?text=C" alt="Cobaan logo" /></div>
+        <div class="spinner kr-anim-spin">
+          <img src="https://via.placeholder.com/64x64?text=C" alt="Cobaan logo" />
+        </div>
       </div>
     </main>
   </div>
@@ -92,26 +93,26 @@
   </style>
 
   <div id="__adminv3"> </div>
+
   <script>
     window.serverData = {
       requestCountry: "ID",
       region: "",
-      cdnPrefix: "https://cf.cobaan.com/assets/v2/adminv3/scripts/",
+      cdnPrefix: "https://coba-nine-rho.vercel.app/assets/v2/adminv3/scripts/",
       preConnectUrls: [
         "https://analytics.google.com",
         "https://www.googletagmanager.com",
-        "https://fnl.cobaan.com",
         "https://www.ref-r.com",
         "https://www.google-analytics.com"
       ],
       preloadFontFiles: [
-        "https://cf.cobaan.com/fonts/fa-solid-900.woff2",
-        "https://cf.cobaan.com/fonts/fa-regular-400.woff2",
-        "https://cf.cobaan.com/fonts/custom-icons.woff2",
-        "https://cf.cobaan.com/fonts/fa-brands-400.woff2"
+        "https://coba-nine-rho.vercel.app/fonts/fa-solid-900.woff2",
+        "https://coba-nine-rho.vercel.app/fonts/fa-regular-400.woff2",
+        "https://coba-nine-rho.vercel.app/fonts/custom-icons.woff2",
+        "https://coba-nine-rho.vercel.app/fonts/fa-brands-400.woff2"
       ],
       initialCssFiles: ["index.css"],
-      faCssFile: "https://cf.cobaan.com/assets/styles/v3/fontawesome.all.css",
+      faCssFile: "https://coba-nine-rho.vercel.app/assets/styles/v3/fontawesome.all.css",
       preloadJsFiles: [
         "shared-domains-vendor.js",
         "dayjs.js",
@@ -130,7 +131,7 @@
       initialJsFiles: ["entryPoint.js"],
       stripePublishableKey: "pk_test_placeholder",
       googleClientId: "your-google-client-id.apps.googleusercontent.com",
-      fullAPIPrefix: "https://cobaan.com/_api/main",
+      fullAPIPrefix: "https://coba-nine-rho.vercel.app/_api/main",
       src: "renderserver",
       experimentName: "main_main",
       componentId: "adminv3/main",
@@ -138,7 +139,7 @@
     };
   </script>
 
-  <script src="https://cf.cobaan.com/assets/v2/adminv3/scripts/entryPoint.js" type="module"></script>
+  <script src="https://coba-nine-rho.vercel.app/assets/v2/adminv3/scripts/entryPoint.js" type="module"></script>
 </body>
 
 </html>
