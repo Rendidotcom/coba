@@ -1,42 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title translate="no">Cobaan</title>
-  <meta charset="utf-8" translate="no" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
     content="Motivate every student to mastery with Cobaan — a fun and customizable learning experience for all." />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  
-  <!-- Preconnects dan DNS Prefetch -->
-  <link rel="preconnect" href="https://coba-nine-rho.vercel.app" />
+  <meta name="twitter:title" content="Cobaan — A new way to learn" />
+  <meta name="twitter:description"
+    content="Create gamified quizzes, lessons, and flashcards with Cobaan. A new learning experience for everyone." />
+  <meta name="twitter:image" content="https://via.placeholder.com/1200x630?text=Cobaan" />
+  <meta property="og:title" content="Cobaan — A new way to learn" />
+  <meta property="og:description"
+    content="Create gamified quizzes, lessons, and flashcards with Cobaan. A new learning experience for everyone." />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Cobaan" />
+  <title>Cobaan</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/logo.png" />
+
+  <!-- Preconnect & DNS Prefetch -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://analytics.google.com" />
   <link rel="dns-prefetch" href="https://analytics.google.com" />
   <link rel="preconnect" href="https://www.googletagmanager.com" />
   <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-  <link rel="preconnect" href="https://www.ref-r.com" />
-  <link rel="dns-prefetch" href="https://www.ref-r.com" />
   <link rel="preconnect" href="https://www.google-analytics.com" />
   <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-
-  <!-- OG Image -->
-  <meta name="twitter:image" content="https://via.placeholder.com/1200x630?text=Cobaan" />
-  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Cobaan" />
-  <meta name="twitter:title" content="Cobaan — A new way to learn" />
-  <meta property="og:title" content="Cobaan — A new way to learn" />
-  <meta name="twitter:description"
-    content="Create gamified quizzes, lessons, and flashcards with Cobaan. A new learning experience for everyone." />
-  <meta property="og:description"
-    content="Create gamified quizzes, lessons, and flashcards with Cobaan. A new learning experience for everyone." />
+  <link rel="preconnect" href="https://www.ref-r.com" />
+  <link rel="dns-prefetch" href="https://www.ref-r.com" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="https://coba-nine-rho.vercel.app/assets/styles/v3/fontawesome.all.css" />
   <link rel="stylesheet" href="https://coba-nine-rho.vercel.app/assets/v2/adminv3/scripts/index.css" />
+  <link rel="stylesheet" href="public/assets/styles/index.css" />
+  <link rel="icon" type="image/png" href="public/assets/logo.png" />
 
-  <!-- Preload Fonts -->
+
+  <!-- Fonts Preload -->
   <link rel="preload" as="font" href="https://coba-nine-rho.vercel.app/fonts/fa-solid-900.woff2" type="font/woff2" crossorigin />
   <link rel="preload" as="font" href="https://coba-nine-rho.vercel.app/fonts/fa-regular-400.woff2" type="font/woff2" crossorigin />
   <link rel="preload" as="font" href="https://coba-nine-rho.vercel.app/fonts/custom-icons.woff2" type="font/woff2" crossorigin />
@@ -56,6 +58,7 @@
     </main>
   </div>
 
+  <!-- Optional: Loader Style -->
   <style>
     #initial-loader-container {
       position: fixed;
@@ -92,8 +95,9 @@
     }
   </style>
 
-  <div id="__adminv3"> </div>
+  <div id="__adminv3"></div>
 
+  <!-- Initial Data Script -->
   <script>
     window.serverData = {
       requestCountry: "ID",
@@ -139,6 +143,7 @@
     };
   </script>
 
+  <!-- Entry Point -->
   <script src="https://coba-nine-rho.vercel.app/assets/v2/adminv3/scripts/entryPoint.js" type="module"></script>
 </body>
 
