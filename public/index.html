@@ -16,7 +16,7 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/assets/logo.png" />
 
-  <!-- Font Awesome via CDN (Fix Integrity) -->
+  <!-- Font Awesome via CDN (with correct integrity) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -76,6 +76,7 @@
 
   <div id="__adminv3"></div>
 
+  <!-- Konfigurasi awal dari server -->
   <script>
     window.serverData = {
       requestCountry: "ID",
@@ -115,7 +116,7 @@
     };
   </script>
 
-  <!-- Entry Point -->
-  <script src="/assets/v2/adminv3/scripts/entryPoint.js" type="module"></script>
+  <!-- Entry Point yang sesuai struktur /scripts/ -->
+  <script src="/scripts/entryPoint.js" type="module"></script>
 </body>
 </html>
