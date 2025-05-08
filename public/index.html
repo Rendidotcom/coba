@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Motivate every student to mastery with Cobaan — a fun and customizable learning experience for all." />
+  <meta name="description"
+    content="Motivate every student to mastery with Cobaan — a fun and customizable learning experience for all." />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Cobaan — A new way to learn" />
-  <meta name="twitter:description" content="Create gamified quizzes, lessons, and flashcards with Cobaan. A new learning experience for everyone." />
-  <meta name="twitter:image" content="https://via.placeholder.com/1200x630?text=Cobaan" />
+  <meta name="twitter:description"
+    content="Create gamified quizzes, lessons, and flashcards with Cobaan. A new learning experience for everyone." />
+  <meta name="twitter:image" content="/assets/logo.png" />
   <meta property="og:title" content="Cobaan — A new way to learn" />
-  <meta property="og:description" content="Create gamified quizzes, lessons, and flashcards with Cobaan. A new learning experience for everyone." />
-  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Cobaan" />
+  <meta property="og:description"
+    content="Create gamified quizzes, lessons, and flashcards with Cobaan. A new learning experience for everyone." />
+  <meta property="og:image" content="/assets/logo.png" />
   <title>Cobaan</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/assets/logo.png" />
-  <link rel="icon" href="/assets/favicon.ico" />
 
-  <!-- Styles -->
+  <!-- Font Awesome via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-sV+jXDszcDgk1XeG1fAT7+LvEoCafIXeMtuCfjfVJ+CH8XbH36wOGmnxoGxN0XPPagWhMZkJ+KiwZSlPycK6Cw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Local Styles -->
   <link rel="stylesheet" href="/assets/styles/index.css" />
-  <link rel="stylesheet" href="/assets/styles/v3/fontawesome.all.css" />
-
-  <!-- Fonts Preload -->
-  <link rel="preload" as="font" href="/fonts/fa-solid-900.woff2" type="font/woff2" crossorigin />
-  <link rel="preload" as="font" href="/fonts/fa-regular-400.woff2" type="font/woff2" crossorigin />
-  <link rel="preload" as="font" href="/fonts/custom-icons.woff2" type="font/woff2" crossorigin />
-  <link rel="preload" as="font" href="/fonts/fa-brands-400.woff2" type="font/woff2" crossorigin />
 </head>
 
 <body>
@@ -35,7 +36,7 @@
       <div class="page-inner"></div>
       <div id="initial-loader-container">
         <div class="spinner kr-anim-spin">
-          <img src="https://via.placeholder.com/64x64?text=C" alt="Cobaan logo" />
+          <img src="/assets/logo.png" alt="Cobaan logo" />
         </div>
       </div>
     </main>
@@ -85,21 +86,15 @@
     window.serverData = {
       requestCountry: "ID",
       region: "",
-      cdnPrefix: "/v2/adminv3/scripts/",
+      cdnPrefix: "/scripts/",
       preConnectUrls: [
         "https://analytics.google.com",
         "https://www.googletagmanager.com",
         "https://www.ref-r.com",
         "https://www.google-analytics.com"
       ],
-      preloadFontFiles: [
-        "/fonts/fa-solid-900.woff2",
-        "/fonts/fa-regular-400.woff2",
-        "/fonts/custom-icons.woff2",
-        "/fonts/fa-brands-400.woff2"
-      ],
       initialCssFiles: ["index.css"],
-      faCssFile: "/assets/styles/v3/fontawesome.all.css",
+      faCssFile: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css",
       preloadJsFiles: [
         "shared-domains-vendor.js",
         "dayjs.js",
@@ -127,6 +122,7 @@
   </script>
 
   <!-- Entry Point -->
-  <script src="/v2/adminv3/scripts/entryPoint.js" type="module"></script>
+  <script src="/scripts/entryPoint.js" type="module"></script>
 </body>
+
 </html>
